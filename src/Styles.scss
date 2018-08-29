@@ -1,0 +1,52 @@
+@import '../node_modules/react-table/react-table.css';
+@import '../node_modules/react-notifications/lib/notifications.css';
+
+body {
+  margin: 10px;
+  padding: 0;
+  font-family: sans-serif;
+  font-size:14px;
+
+  button {
+    display: inline-flex;
+    border: 1px solid;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 13px;
+    height: 32px;
+    transition: all 0.3s ease 0s;
+    background: rgba(0,0,0,1);
+    color: rgba(255,255,255,1);
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  form {
+    display: flex;
+
+    fieldset {
+      border:0;
+      padding:0;
+      margin: 10px 10px 0;
+
+      label {
+        display: block;
+        margin-bottom:4px;
+      }
+
+      input, select {
+        height: 28px;
+        padding: 0;
+      }
+    }
+
+    button {
+      align-self: flex-end;
+    }
+  }
+}
